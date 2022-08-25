@@ -38,8 +38,10 @@ ros-noetic-xacro ros-noetic-robot-state-publisher
 ros-noetic-teleop-twist-keyboard ros-noetic-rviz
 ros-noetic-velocity-controllers ros-noetic-effort-controllers
 ros-noetic-position-controllers ros-noetic-controller-*
-ros-noetic-joint-state-* ros-noetic-controller-manager* 
-ros-noetic-joint-state*
+ros-noetic-joint-state-* ros-noetic-controller-manager*
+ros-noetic-joint-state* ros-noetic-hector-sensors*
+ros-noetic-realsense* ros-noetic-gazebo-ros-control
+ros-noetic-ackermann*
 ```
 
 Clone this repository into `(your_catkin_workspace)/src`, source the
@@ -56,3 +58,18 @@ The package can be run by using
 roslaunch skidsteer_drive bot.launch
 ```
 
+### Ackermann Drive
+
+The package can be run by using
+
+```bash
+roslaunch ackermann_drive ackermann_vehicle_hokuyo_imu_gazebo.launch
+```
+
+### Omniwheel Drive
+
+To be tested
+
+### Simple Drone
+
+To be tested
